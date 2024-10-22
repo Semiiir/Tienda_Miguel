@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Videojuegos y PC Gamer</title>
+    <style>
+        body {	
+	    background-color: black;		 											
+        }
+        header {							
+        color: Red;						
+        text-align: center;
+	    padding: 70px;
+        }
+        .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        }
+        .item {
+        background-color: #232323;
+        }
+        .item img {
+        width: 100%;
+        border-radius: 20px;
+        }
+        .item h3 {
+        margin: 50px;
+        }
+        .item p {
+        color: #FFFFFF;
+	    text-align: center;
+        }
+	    h1, label {
+        color: red;
+        }
+        h3 {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Tienda de Videojuegos y PC Gamer</h1></header>
+    <div class="container">
+        
+        <!-- Consolas de Videojuegos -->
+        <div class="item">
+            <img src="https://files.lafm.com.co/assets/public/styles/4x3/public/2020-11/xboxsx-ps5-crop1592778897757jpg-554688468_4fsn_0.jpg?VersionId=Lv7gsIgPBmdJulT630xBUp9p.aLEV5YV&itok=g2ezewbi">
+           <h3> Consolas de Videojuegos</h3>
+            <p> Las últimas consolas para jugar tus títulos favoritos con la mejor calidad.</p>
+        </div>
+
+	    <!----Video--->
+	    <iframe src="https://www.youtube.com/embed/NqPeeO-7yT4?si=E-t5ayezk0gLCwP0" width="600" height="600" allowfullscreen></iframe>
+
+        <!-- Controles -->
+        <div class="item">
+            <img src="https://lh6.googleusercontent.com/proxy/68D5FYR0k0McQC3tfcIDiK1C_SU70CNG4wTftfVJ1iIu98_DynNMAhE_aQDiaL2KhshIyw__O5-ZR90ag2p_I9Vh1n9a6bJWNdvh7ILQnrEhfS_CySETsepuK1bQuM4-h9tQWBlKnzInE3Tk6nnqkL1uvB6CiQ-ksUbSRHkyXW2L5_kEoy9xchbMafHEGrmXtSIZvcLDoig8sz1Xnfu_sqkEMVSL4A">
+            <h3>Controles de Videojuegos</h3>
+            <p>Controla la acción con los mandos más avanzados.</p>
+        </div>
+
+        <!-- PC Gamer -->
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/71XXXjZa4pL._AC_UF894,1000_QL80_.jpg">
+            <h3>PC Gamer</h3>
+            <p>Computadoras de alto rendimiento para llevar tu experiencia de juego al siguiente nivel.</p>
+        </div>
+
+        <!-- Componentes de PC --> 
+        <div class="item">
+            <img src="https://acf.geeknetic.es/imagenes/auto/2023/3/7/2xg-las-mejores-configuraciones-de-pc-para-cada-precio-segun-nuestro-concurso.jpg">
+            <h3>Componentes para PC</h3>
+            <p>Las mejores tarjetas gráficas, procesadores y más para mejorar tu equipo.</p>
+        </div>
+
+        <!-- Auriculares -->
+        <div class="item">
+            <img src="https://cdnx.jumpseller.com/centralgamer/image/25544680/thumb/610/610?1723492324">
+            <h3>Auriculares</h3>
+            <p>Con estos auriculares podras tener una mejor experiencia.</p>
+        </div>
+        <h1>FORMULARIO </h1>
+
+    </div>
+    <form>
+        <p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" size="50" maxlength="50" placeholder="Introduce tu nombre" required/>
+        </p>
+        <p>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required/>
+        </p>
+        <p>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required/> 
+        </p>
+        <p>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu teléfono" required/>
+        </p>
+        <p>
+            <label for="fecha">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha" name="fecha" required/> 
+        </p>
+        <p>
+            <label for="observaciones">Observaciones:</label>
+            <br>
+            <textarea id="observaciones" name="observaciones" cols="50" rows="5" placeholder="Escribe tus observaciones aquí"></textarea>
+        </p>
+        <p>
+            <button type="submit">Enviar</button> 
+        </p>
+    </form>
+</body>
+</html>
